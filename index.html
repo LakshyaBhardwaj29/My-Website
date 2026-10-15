@@ -3,772 +3,531 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lakshya Bhardwaj | Corporate Finance & Chartered Accountancy</title>
-  
-  <!-- Google Fonts: Plus Jakarta Sans -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  
-  <!-- Tailwind CSS CDN -->
+  <title>Lakshya Bhardwaj | CA Finalist, Finance & Audit Professional</title>
+  <meta name="description" content="Official personal site of Lakshya Bhardwaj - CA Finalist, Statutory Audit & Financial Operations Specialist.">
   <script src="https://cdn.tailwindcss.com"></script>
-  
-  <!-- Lucide Icons CDN -->
   <script src="https://unpkg.com/lucide@latest"></script>
-
   <script>
     tailwind.config = {
       darkMode: 'class',
       theme: {
         extend: {
-          fontFamily: {
-            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-            mono: ['"JetBrains Mono"', 'monospace'],
-          },
           colors: {
-            navy: {
-              850: '#0b1329',
-              900: '#070d1e',
-              950: '#040711',
-            },
-            emerald: {
-              450: '#10b981',
+            brand: {
+              50: '#f0f9ff',
+              100: '#e0f2fe',
+              500: '#0284c7',
+              600: '#0369a1',
+              700: '#075985',
+              800: '#0c4a6e',
+              900: '#082f49',
             }
           }
         }
       }
     }
   </script>
-
   <style>
-    /* Custom fine-tuned glassmorphism and transitions */
-    .glass-header {
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-    }
-    .custom-shadow {
-      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
-    }
-    .dark .custom-shadow {
-      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
-    }
-    /* Subtle dot grid pattern */
-    .bg-grid-pattern {
-      background-size: 32px 32px;
-      background-image: radial-gradient(circle, rgba(100, 116, 139, 0.12) 1.5px, transparent 1.5px);
-    }
-    .dark .bg-grid-pattern {
-      background-size: 32px 32px;
-      background-image: radial-gradient(circle, rgba(255, 255, 255, 0.06) 1.5px, transparent 1.5px);
+    .badge-subtle {
+      @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium;
     }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-800 dark:bg-navy-950 dark:text-slate-100 font-sans transition-colors duration-300 min-h-screen flex flex-col antialiased selection:bg-emerald-500 selection:text-white">
+<body class="bg-slate-50 text-slate-800 antialiased dark:bg-slate-950 dark:text-slate-100 transition-colors duration-200 selection:bg-sky-500 selection:text-white">
 
-  <!-- ==================== HEADER / NAVIGATION ==================== -->
-  <header class="fixed top-0 left-0 right-0 z-50 glass-header bg-white/80 dark:bg-navy-900/80 border-b border-slate-200/80 dark:border-slate-800/80 transition-colors">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-      
-      <!-- Brand Logo / Identity -->
-      <a href="#hero" class="group flex items-center space-x-3.5 focus:outline-none">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-slate-900 via-slate-800 to-emerald-600 dark:from-emerald-500 dark:via-emerald-400 dark:to-teal-300 flex items-center justify-center text-white dark:text-navy-950 font-bold text-lg shadow-md group-hover:scale-105 transition-transform duration-200">
-          LB
-        </div>
-        <div class="flex flex-col">
-          <span class="font-bold text-lg tracking-tight text-slate-900 dark:text-white leading-tight">Lakshya Bhardwaj</span>
-          <span class="text-xs font-medium text-emerald-600 dark:text-emerald-400 tracking-wide uppercase font-mono">CA Finalist &bull; Finance</span>
-        </div>
+  <!-- Top Sticky Navigation -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-white/85 dark:bg-slate-900/85 border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="font-extrabold text-xl tracking-tight text-slate-900 dark:text-white flex items-center gap-2">
+        <span class="w-8 h-8 rounded-lg bg-sky-600 text-white flex items-center justify-center text-sm font-bold shadow-sm">LB</span>
+        Lakshya Bhardwaj
       </a>
 
-      <!-- Desktop Navigation Menu -->
-      <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
-        <a href="#about" class="text-slate-600 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">About &amp; Credentials</a>
-        <a href="#expertise" class="text-slate-600 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">Expertise</a>
-        <a href="#insights" class="text-slate-600 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">Insights</a>
-        <a href="#contact" class="text-slate-600 dark:text-slate-300 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors">Contact</a>
+      <nav class="hidden md:flex items-center space-x-7 text-sm font-medium text-slate-600 dark:text-slate-300">
+        <a href="#about" class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">About</a>
+        <a href="#experience" class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Experience</a>
+        <a href="#academics" class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Qualifications</a>
+        <a href="#skills" class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Skills</a>
+        <a href="#leadership" class="hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Achievements</a>
       </nav>
 
-      <!-- Action Utilities: Theme Toggle & Get in touch -->
-      <div class="flex items-center space-x-3 sm:space-x-4">
-        <!-- Dark/Light Theme Button -->
-        <button id="themeToggle" aria-label="Toggle Theme" class="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-100/70 dark:bg-navy-850/70 text-slate-700 dark:text-slate-200 hover:bg-slate-200 dark:hover:bg-navy-800 transition-all focus:outline-none">
-          <i data-lucide="sun" id="sunIcon" class="w-5 h-5 hidden"></i>
-          <i data-lucide="moon" id="moonIcon" class="w-5 h-5 hidden"></i>
+      <div class="flex items-center space-x-3">
+        <button id="theme-toggle" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-colors" title="Toggle Dark/Light Mode">
+          <i data-lucide="moon" class="w-4 h-4 hidden dark:block"></i>
+          <i data-lucide="sun" class="w-4 h-4 block dark:hidden"></i>
         </button>
-
-        <a href="#contact" class="hidden sm:inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-emerald-700 text-white dark:bg-emerald-500 dark:hover:bg-emerald-400 dark:text-navy-950 font-semibold text-sm transition-all shadow-sm">
-          <span>Connect</span>
-          <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+        <a href="https://www.linkedin.com/in/lakshya-bhardwaj29" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-sky-600 dark:hover:text-sky-400 transition-colors" title="LinkedIn Profile">
+          <i data-lucide="linkedin" class="w-4 h-4"></i>
         </a>
-
-        <!-- Mobile Menu Toggle Button -->
-        <button id="mobileMenuBtn" aria-label="Open Navigation Menu" class="md:hidden p-2 rounded-xl text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
-          <i data-lucide="menu" id="menuOpenIcon" class="w-6 h-6"></i>
-          <i data-lucide="x" id="menuCloseIcon" class="w-6 h-6 hidden"></i>
-        </button>
-      </div>
-    </div>
-
-    <!-- Mobile Dropdown Menu -->
-    <div id="mobileMenu" class="hidden md:hidden px-6 pt-4 pb-6 border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-navy-900/95 backdrop-blur-md space-y-3">
-      <a href="#about" class="mobile-link block py-2.5 text-base font-medium text-slate-700 dark:text-slate-200 hover:text-emerald-600">About &amp; Credentials</a>
-      <a href="#expertise" class="mobile-link block py-2.5 text-base font-medium text-slate-700 dark:text-slate-200 hover:text-emerald-600">Expertise</a>
-      <a href="#insights" class="mobile-link block py-2.5 text-base font-medium text-slate-700 dark:text-slate-200 hover:text-emerald-600">Insights &amp; Articles</a>
-      <a href="#contact" class="mobile-link block py-2.5 text-base font-medium text-slate-700 dark:text-slate-200 hover:text-emerald-600">Contact</a>
-      <div class="pt-2">
-        <a href="#contact" class="mobile-link w-full inline-flex items-center justify-center space-x-2 py-3 rounded-xl bg-emerald-600 text-white font-semibold text-sm">
-          <span>Get in Touch</span>
-          <i data-lucide="mail" class="w-4 h-4"></i>
+        <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-4 py-2 text-xs font-semibold text-white bg-sky-600 rounded-lg hover:bg-sky-700 transition-colors shadow-sm">
+          Contact Me
         </a>
       </div>
     </div>
   </header>
 
-  <!-- ==================== MAIN CONTENT CONTAINER ==================== -->
-  <main class="flex-grow pt-20">
+  <!-- Hero Section -->
+  <section class="py-16 md:py-24 border-b border-slate-200 dark:border-slate-800 bg-gradient-to-b from-white to-slate-50 dark:from-slate-900 dark:to-slate-950">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <!-- Self-Built Showcase Pill -->
+      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-medium bg-emerald-50 text-emerald-800 dark:bg-emerald-950/60 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/80 mb-6 shadow-xs">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span>Independent Project: Domain, DNS Architecture & Deployment engineered end-to-end by me</span>
+      </div>
 
-    <!-- ==================== 1. HERO SECTION ==================== -->
-    <section id="hero" class="relative overflow-hidden pt-16 sm:pt-24 pb-20 sm:pb-28 border-b border-slate-200/60 dark:border-slate-800/60 bg-grid-pattern">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
-        <div class="max-w-4xl mx-auto text-center space-y-6">
-          
-          <!-- Status Pill -->
-          <div class="inline-flex items-center space-x-2.5 px-3.5 py-1.5 rounded-full bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800/60 text-emerald-700 dark:text-emerald-400 text-xs font-semibold tracking-wide uppercase">
-            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-            <span>Chartered Accountancy Finalist &bull; Available for Strategic Engagements</span>
-          </div>
-
-          <!-- Main Headline -->
-          <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-[1.12]">
-            Bridging <span class="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 dark:from-emerald-400 dark:via-teal-300 dark:to-cyan-300 bg-clip-text text-transparent">Rigorous Governance</span> with Value-Driven Corporate Finance.
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-8">
+          <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white mb-6 leading-tight">
+            Chartered Accountancy Finalist & Financial Analyst.
           </h1>
-
-          <!-- Impact Statement -->
-          <p class="text-lg sm:text-xl text-slate-600 dark:text-slate-300 leading-relaxed font-normal max-w-2xl mx-auto">
-            Hi, I'm <strong class="text-slate-900 dark:text-white font-semibold">Lakshya Bhardwaj</strong>. I specialize in corporate valuations, quantitative financial modeling, regulatory compliance, and statutory audit frameworks.
+          <p class="text-lg text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
+            CA Final (Grp 1 Qualified) with extensive experience leading statutory, branch, and tax audits for industrial corporate clients with turnovers exceeding ₹100 Crores. Passionate about financial modeling, process optimization, and corporate strategy.
           </p>
 
-          <!-- Call to Action Buttons -->
-          <div class="flex flex-col sm:flex-row items-center justify-center gap-3.5 pt-4">
-            <a href="#about" class="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white dark:bg-emerald-500 dark:hover:bg-emerald-400 dark:text-navy-950 font-bold text-sm tracking-wide transition-all shadow-lg hover:shadow-emerald-500/10 text-center flex items-center justify-center space-x-2">
-              <span>View Experience &amp; Credentials</span>
-              <i data-lucide="arrow-down" class="w-4 h-4"></i>
+          <!-- Quick Action Buttons -->
+          <div class="flex flex-wrap items-center gap-4 mb-10">
+            <a href="mailto:lakshyabhardwaj.work@gmail.com" class="inline-flex items-center gap-2 px-5 py-2.5 font-semibold text-sm text-white bg-sky-600 hover:bg-sky-700 rounded-lg transition-colors shadow-sm">
+              <i data-lucide="mail" class="w-4 h-4"></i>
+              lakshyabhardwaj.work@gmail.com
             </a>
-            
-            <a href="#contact" class="w-full sm:w-auto px-8 py-3.5 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-500 bg-white/80 dark:bg-navy-900/60 text-slate-800 dark:text-slate-200 font-semibold text-sm transition-all text-center flex items-center justify-center space-x-2">
-              <i data-lucide="send" class="w-4 h-4 text-emerald-500"></i>
-              <span>Initiate Consultation</span>
+            <a href="https://www.linkedin.com/in/lakshya-bhardwaj29" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-2.5 font-semibold text-sm text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-lg transition-colors shadow-sm">
+              <i data-lucide="linkedin" class="w-4 h-4 text-sky-600"></i>
+              LinkedIn Profile
+            </a>
+            <a href="tel:+919777069911" class="inline-flex items-center gap-2 px-5 py-2.5 font-semibold text-sm text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-lg transition-colors shadow-sm">
+              <i data-lucide="phone" class="w-4 h-4 text-emerald-600"></i>
+              +91 9777069911
             </a>
           </div>
 
-          <!-- Social Badges & Professional Quick-Links -->
-          <div class="pt-8 flex items-center justify-center space-x-6 text-slate-500 dark:text-slate-400 text-sm">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="flex items-center space-x-2 hover:text-emerald-600 dark:hover:text-emerald-400 transition">
-              <i data-lucide="linkedin" class="w-4 h-4"></i>
-              <span>LinkedIn</span>
-            </a>
-            <span class="text-slate-300 dark:text-slate-700">&bull;</span>
-            <a href="mailto:contact@lakshyabhardwaj.com" class="flex items-center space-x-2 hover:text-emerald-600 dark:hover:text-emerald-400 transition">
-              <i data-lucide="mail" class="w-4 h-4"></i>
-              <span>Direct Email</span>
-            </a>
-            <span class="text-slate-300 dark:text-slate-700">&bull;</span>
-            <span class="flex items-center space-x-1.5 text-xs font-mono text-slate-400">
-              <i data-lucide="shield-check" class="w-3.5 h-3.5 text-emerald-500"></i>
-              <span>ICAI Registered</span>
+          <!-- Highlight Metric Chips -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div class="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs">
+              <div class="text-2xl font-black text-sky-600">₹100 Cr+</div>
+              <div class="text-xs text-slate-500 font-medium">Turnover Audited</div>
+            </div>
+            <div class="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs">
+              <div class="text-2xl font-black text-sky-600">5 Members</div>
+              <div class="text-xs text-slate-500 font-medium">Audit Team Led</div>
+            </div>
+            <div class="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs">
+              <div class="text-2xl font-black text-sky-600">~50%</div>
+              <div class="text-xs text-slate-500 font-medium">Audit Cycle Savings</div>
+            </div>
+            <div class="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs">
+              <div class="text-2xl font-black text-sky-600">95%</div>
+              <div class="text-xs text-slate-500 font-medium">Class XII Topper</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Recruiter Bio Card -->
+        <div class="lg:col-span-4">
+          <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-sky-500/10 rounded-full blur-2xl"></div>
+            <h3 class="text-sm font-bold tracking-wider uppercase text-sky-600 dark:text-sky-400 mb-4 flex items-center gap-2">
+              <i data-lucide="user-check" class="w-4 h-4"></i> Candidate Overview
+            </h3>
+            <ul class="space-y-3.5 text-sm text-slate-600 dark:text-slate-300">
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+                <span><strong>Status:</strong> CA Finalist (Articleship Complete)</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+                <span><strong>Experience:</strong> Associate & Senior Accountant (2026–Present)</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+                <span><strong>Leadership:</strong> McKinsey Forward Program Graduate</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+                <span><strong>Award:</strong> Best Presenter (ICAI MCS Jaipur, 2025)</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <i data-lucide="check" class="w-4 h-4 text-emerald-500 shrink-0 mt-0.5"></i>
+                <span><strong>Languages:</strong> English (Fluent), Hindi (Fluent), Odia (Conversational)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section id="experience" class="py-20 border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-2xl mb-14">
+        <h2 class="text-xs uppercase tracking-widest text-sky-600 dark:text-sky-400 font-bold mb-2">Track Record</h2>
+        <h3 class="text-3xl font-bold text-slate-900 dark:text-white">Professional Experience</h3>
+      </div>
+
+      <div class="space-y-10">
+        
+        <!-- Experience Item 1 -->
+        <div class="p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs hover:border-sky-500/40 transition-colors">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+            <div>
+              <h4 class="text-xl font-bold text-slate-900 dark:text-white">Associate</h4>
+              <p class="text-sm font-semibold text-sky-600 dark:text-sky-400">M. Murarka & Co. &bull; CA Firm</p>
+            </div>
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-sky-100 text-sky-800 dark:bg-sky-950 dark:text-sky-300">
+              Jan 2026 – Present
+            </span>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+            Promoted to Associate role following completion of 3-year articleship training. Heading audit assignments, overseeing junior trainees, and driving corporate advisory engagements with additional leadership and client-facing responsibilities.
+          </p>
+        </div>
+
+        <!-- Experience Item 2 -->
+        <div class="p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs hover:border-sky-500/40 transition-colors">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-4">
+            <div>
+              <h4 class="text-xl font-bold text-slate-900 dark:text-white">Senior Accountant</h4>
+              <p class="text-sm font-semibold text-sky-600 dark:text-sky-400">Jay Jagadambay Traders</p>
+            </div>
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-sky-100 text-sky-800 dark:bg-sky-950 dark:text-sky-300">
+              Jan 2026 – Present
+            </span>
+          </div>
+          <ul class="space-y-2.5 text-sm text-slate-600 dark:text-slate-300">
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="arrow-right" class="w-4 h-4 text-sky-600 shrink-0 mt-0.5"></i>
+              <span><strong>Financial & Accounting Operations:</strong> Managing daily accounting workflows, general ledgers, financial statements, and establishing internal checks and controls.</span>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <i data-lucide="arrow-right" class="w-4 h-4 text-sky-600 shrink-0 mt-0.5"></i>
+              <span><strong>Compliance & Analytics:</strong> Ensuring rigorous statutory tax compliance, periodic financial reporting, and conducting variance analysis on primary business metrics.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Experience Item 3: Articleship Deep-Dive -->
+        <div class="p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-6">
+            <div>
+              <h4 class="text-xl font-bold text-slate-900 dark:text-white">Articled Assistant</h4>
+              <p class="text-sm font-semibold text-sky-600 dark:text-sky-400">M. Murarka & Co. &bull; Sambalpur, Odisha</p>
+            </div>
+            <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300">
+              Jan 2023 – Jan 2026 (3 Years)
             </span>
           </div>
 
+          <div class="grid md:grid-cols-2 gap-6">
+            <!-- Statutory & Branch Audit -->
+            <div class="p-5 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800">
+              <h5 class="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-3">
+                <i data-lucide="shield-check" class="w-4 h-4 text-sky-600"></i> Statutory & Internal Audits
+              </h5>
+              <ul class="space-y-2 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                <li>&bull; Led a 5-member team conducting statutory, tax, and limited review audits across 6+ industrial sectors (FMCG, Rice Mills, Authorized Tata Workshops, Flour Mills, Sponge Iron Plants) with turnovers > ₹100 Crores.</li>
+                <li>&bull; Conceptualized audit methodology tools for a major automobile dealer, slashing revenue audit cycle time by ~50%.</li>
+                <li>&bull; Evaluated spares and service module internal controls, identifying process redundancies and revenue leakages.</li>
+                <li>&bull; Conducted Statutory Branch Audit for a major nationalized bank, assessing an advances portfolio between ₹50 Crores and ₹200 Crores.</li>
+              </ul>
+            </div>
+
+            <!-- Taxation & Compliance -->
+            <div class="p-5 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800">
+              <h5 class="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2 mb-3">
+                <i data-lucide="file-text" class="w-4 h-4 text-sky-600"></i> Taxation & Financial Reporting
+              </h5>
+              <ul class="space-y-2 text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                <li>&bull; Formulated and filed GST refunds amounting to ~₹50 Lakhs for client entities generating turnovers well above ₹80 Crores.</li>
+                <li>&bull; Prepared books of accounts, financial statements, and cash flows adhering to AS, Ind AS, and Schedule III for entities with ₹50–100 Cr turnovers.</li>
+                <li>&bull; Delivered strategic client advisory on tax-planning optimization and evaluated capital allocation/investment decisions.</li>
+              </ul>
+            </div>
+          </div>
         </div>
 
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ==================== 2. ABOUT & CREDENTIALS ==================== -->
-    <section id="about" class="py-20 bg-white dark:bg-navy-900/40 border-b border-slate-200/60 dark:border-slate-800/60">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <!-- Academic Qualifications Section -->
+  <section id="academics" class="py-20 border-b border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/40">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-2xl mb-14">
+        <h2 class="text-xs uppercase tracking-widest text-sky-600 dark:text-sky-400 font-bold mb-2">Credentials</h2>
+        <h3 class="text-3xl font-bold text-slate-900 dark:text-white">Academic Qualifications</h3>
+      </div>
+
+      <!-- Qualifications Table -->
+      <div class="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm">
+        <table class="w-full text-left text-sm text-slate-600 dark:text-slate-300">
+          <thead class="bg-slate-100/75 dark:bg-slate-800/80 text-xs uppercase font-bold text-slate-700 dark:text-slate-200 border-b border-slate-200 dark:border-slate-800">
+            <tr>
+              <th scope="col" class="px-6 py-4">Course / Degree</th>
+              <th scope="col" class="px-6 py-4">Institution / Board</th>
+              <th scope="col" class="px-6 py-4">Year</th>
+              <th scope="col" class="px-6 py-4">Marks / Result</th>
+              <th scope="col" class="px-6 py-4">Distinction & Remarks</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-200 dark:divide-slate-800">
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors">
+              <td class="px-6 py-4 font-bold text-slate-900 dark:text-white">CA Final (Group 1)</td>
+              <td class="px-6 py-4">ICAI</td>
+              <td class="px-6 py-4">May 2026</td>
+              <td class="px-6 py-4 font-semibold text-emerald-600 dark:text-emerald-400">157 / 300 (52.33%)</td>
+              <td class="px-6 py-4"><span class="badge-subtle bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300">Exemption in 1 Subject</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors">
+              <td class="px-6 py-4 font-bold text-slate-900 dark:text-white">CA Intermediate (Group 2)</td>
+              <td class="px-6 py-4">ICAI</td>
+              <td class="px-6 py-4">Nov 2022</td>
+              <td class="px-6 py-4 font-semibold">208 / 400 (52.00%)</td>
+              <td class="px-6 py-4"><span class="badge-subtle bg-sky-100 text-sky-800 dark:bg-sky-950 dark:text-sky-300">Exemption in 1 Subject</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors">
+              <td class="px-6 py-4 font-bold text-slate-900 dark:text-white">CA Intermediate (Group 1)</td>
+              <td class="px-6 py-4">ICAI</td>
+              <td class="px-6 py-4">May 2022</td>
+              <td class="px-6 py-4 font-semibold">232 / 400 (58.00%)</td>
+              <td class="px-6 py-4"><span class="badge-subtle bg-sky-100 text-sky-800 dark:bg-sky-950 dark:text-sky-300">Exemption in 3 Subjects</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors">
+              <td class="px-6 py-4 font-bold text-slate-900 dark:text-white">CA Foundation</td>
+              <td class="px-6 py-4">ICAI</td>
+              <td class="px-6 py-4">Jan 2021</td>
+              <td class="px-6 py-4 font-semibold">264 / 400 (66.00%)</td>
+              <td class="px-6 py-4"><span class="badge-subtle bg-sky-100 text-sky-800 dark:bg-sky-950 dark:text-sky-300">Exemption in 3 Subjects</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors">
+              <td class="px-6 py-4 font-bold text-slate-900 dark:text-white">Bachelor of Commerce (B.Com)</td>
+              <td class="px-6 py-4">Sikkim Manipal University</td>
+              <td class="px-6 py-4">Pursuing</td>
+              <td class="px-6 py-4 italic text-slate-400">In Progress</td>
+              <td class="px-6 py-4">Undergraduate Degree</td>
+            </tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors">
+              <td class="px-6 py-4 font-bold text-slate-900 dark:text-white">CBSE Class XII (Commerce)</td>
+              <td class="px-6 py-4">DAV Public School, Burla</td>
+              <td class="px-6 py-4">Mar 2020</td>
+              <td class="px-6 py-4 font-bold text-sky-600 dark:text-sky-400">475 / 500 (95.00%)</td>
+              <td class="px-6 py-4"><span class="badge-subtle bg-amber-100 text-amber-800 dark:bg-amber-950 dark:text-amber-300">🏆 School Topper (Batch of 80)</span></td>
+            </tr>
+            <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-colors">
+              <td class="px-6 py-4 font-bold text-slate-900 dark:text-white">CBSE Class X</td>
+              <td class="px-6 py-4">Indian Public School, Sambalpur</td>
+              <td class="px-6 py-4">Mar 2018</td>
+              <td class="px-6 py-4 font-bold">455 / 500 (91.00%)</td>
+              <td class="px-6 py-4"><span class="badge-subtle bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-300">🥈 2nd Rank (Batch of 50)</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills & Certifications -->
+  <section id="skills" class="py-20 border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-2xl mb-14">
+        <h2 class="text-xs uppercase tracking-widest text-sky-600 dark:text-sky-400 font-bold mb-2">Technical Toolkit</h2>
+        <h3 class="text-3xl font-bold text-slate-900 dark:text-white">Skills & Certifications</h3>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8">
         
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          
-          <!-- Left Column: Biography & Mission -->
-          <div class="lg:col-span-7 space-y-6">
-            <div class="inline-flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 font-mono">
-              <i data-lucide="user-check" class="w-4 h-4"></i>
-              <span>Profile &amp; Background</span>
-            </div>
-            
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-              A balanced discipline of regulatory prudence and strategic execution.
-            </h2>
-
-            <div class="space-y-4 text-slate-600 dark:text-slate-300 leading-relaxed text-base">
-              <p>
-                As a Chartered Accountancy finalist, my training is anchored at the crossroads of statutory audit, forensic reconciliation, corporate governance, and quantitative finance. I operate under the belief that numbers should tell an actionable strategic narrative while upholding uncompromising ethical fidelity.
-              </p>
-              <p>
-                Throughout my professional articleship and analytical research, I have contributed to statutory audits across diverse industries, built scalable three-statement cash flow forecasting models, and evaluated business valuations under international accounting benchmarks.
-              </p>
-            </div>
-
-            <!-- Core Competency Tags -->
-            <div class="pt-2">
-              <h3 class="text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500 mb-3">Core Competency Matrix</h3>
-              <div class="flex flex-wrap gap-2">
-                <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 dark:bg-navy-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700/60">Ind AS &amp; IFRS</span>
-                <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 dark:bg-navy-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700/60">DCF &amp; Comparable Valuations</span>
-                <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 dark:bg-navy-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700/60">Statutory &amp; Internal Audit</span>
-                <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 dark:bg-navy-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700/60">Direct &amp; Indirect Taxation</span>
-                <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 dark:bg-navy-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700/60">Financial Forecasting</span>
-                <span class="px-3 py-1.5 rounded-lg text-xs font-medium bg-slate-100 dark:bg-navy-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700/60">Capital Budgeting</span>
-              </div>
-            </div>
-
-            <!-- Quick Download CV Trigger -->
-            <div class="pt-4">
-              <a href="#contact" class="inline-flex items-center space-x-2 text-sm font-semibold text-emerald-600 dark:text-emerald-400 hover:underline">
-                <i data-lucide="file-text" class="w-4 h-4"></i>
-                <span>Request Detailed CV / Audit Portfolio &rarr;</span>
-              </a>
-            </div>
+        <!-- Accounting & Systems -->
+        <div class="p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs">
+          <h4 class="text-lg font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+            <i data-lucide="database" class="w-5 h-5 text-sky-600"></i> Core Enterprise Software
+          </h4>
+          <div class="flex flex-wrap gap-2.5">
+            <span class="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700">PowerBI</span>
+            <span class="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700">Tally Prime</span>
+            <span class="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700">Tally ERP 9</span>
+            <span class="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700">Busy Accounting</span>
+            <span class="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700">Advanced Excel & Modeling</span>
           </div>
 
-          <!-- Right Column: Structured Credentials Timeline / Cards -->
-          <div class="lg:col-span-5 space-y-4">
-            
-            <!-- Credential 1 -->
-            <div class="p-5 rounded-2xl bg-slate-50 dark:bg-navy-850 border border-slate-200/80 dark:border-slate-800 custom-shadow transition hover:border-emerald-500/50">
-              <div class="flex items-start justify-between">
-                <div>
-                  <span class="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider font-mono">ICAI &bull; Advanced Stage</span>
-                  <h4 class="text-lg font-bold text-slate-900 dark:text-white mt-0.5">Chartered Accountancy Finalist</h4>
-                  <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">The Institute of Chartered Accountants of India</p>
-                </div>
-                <div class="p-2 rounded-xl bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400">
-                  <i data-lucide="award" class="w-5 h-5"></i>
-                </div>
-              </div>
-              <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 border-t border-slate-200/60 dark:border-slate-800 pt-3">
-                Comprehensive training across advanced auditing standards, financial reporting, corporate tax laws, and strategic financial management.
-              </p>
-            </div>
-
-            <!-- Credential 2 -->
-            <div class="p-5 rounded-2xl bg-slate-50 dark:bg-navy-850 border border-slate-200/80 dark:border-slate-800 custom-shadow transition hover:border-emerald-500/50">
-              <div class="flex items-start justify-between">
-                <div>
-                  <span class="text-xs font-bold text-teal-600 dark:text-teal-400 uppercase tracking-wider font-mono">Practical Articleship Experience</span>
-                  <h4 class="text-lg font-bold text-slate-900 dark:text-white mt-0.5">Audit &amp; Assurance Associate</h4>
-                  <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Chartered Accountancy Practice</p>
-                </div>
-                <div class="p-2 rounded-xl bg-teal-100 dark:bg-teal-950/60 text-teal-700 dark:text-teal-400">
-                  <i data-lucide="briefcase" class="w-5 h-5"></i>
-                </div>
-              </div>
-              <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 border-t border-slate-200/60 dark:border-slate-800 pt-3">
-                Led field audits, ledger reconciliations, internal control assessments (ICoFR), and preparation of statutory financial disclosures.
-              </p>
-            </div>
-
-            <!-- Credential 3 -->
-            <div class="p-5 rounded-2xl bg-slate-50 dark:bg-navy-850 border border-slate-200/80 dark:border-slate-800 custom-shadow transition hover:border-emerald-500/50">
-              <div class="flex items-start justify-between">
-                <div>
-                  <span class="text-xs font-bold text-cyan-600 dark:text-cyan-400 uppercase tracking-wider font-mono">Undergraduate Degree</span>
-                  <h4 class="text-lg font-bold text-slate-900 dark:text-white mt-0.5">Bachelor of Commerce (Honours)</h4>
-                  <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Specialization in Accounting &amp; Corporate Finance</p>
-                </div>
-                <div class="p-2 rounded-xl bg-cyan-100 dark:bg-cyan-950/60 text-cyan-700 dark:text-cyan-400">
-                  <i data-lucide="graduation-cap" class="w-5 h-5"></i>
-                </div>
-              </div>
-              <p class="text-xs text-slate-600 dark:text-slate-300 mt-3 border-t border-slate-200/60 dark:border-slate-800 pt-3">
-                Academic foundation in quantitative business analysis, micro/macro economics, financial mathematics, and mercantile regulations.
-              </p>
-            </div>
-
+          <h5 class="text-sm font-bold text-slate-900 dark:text-white mt-8 mb-3 flex items-center gap-2">
+            <i data-lucide="globe" class="w-4 h-4 text-sky-600"></i> Languages
+          </h5>
+          <div class="space-y-1.5 text-xs text-slate-600 dark:text-slate-300">
+            <p><strong>English:</strong> Fluent</p>
+            <p><strong>Hindi:</strong> Fluent</p>
+            <p><strong>Odia:</strong> Conversational Proficiency</p>
           </div>
+        </div>
 
+        <!-- Professional Training & Simulations -->
+        <div class="p-8 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs">
+          <h4 class="text-lg font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+            <i data-lucide="award" class="w-5 h-5 text-sky-600"></i> Certified Training Programs
+          </h4>
+          <ul class="space-y-4 text-sm text-slate-600 dark:text-slate-300">
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle" class="w-4 h-4 text-sky-600 shrink-0 mt-1"></i>
+              <div>
+                <strong>SAP FICO (45+ Hours):</strong> Comprehensive training in financial accounting, cost center allocations, and general ledger configurations.
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle" class="w-4 h-4 text-sky-600 shrink-0 mt-1"></i>
+              <div>
+                <strong>Goldman Sachs Job Simulation:</strong> Excel Skills for Business program conducted via Forage.
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle" class="w-4 h-4 text-sky-600 shrink-0 mt-1"></i>
+              <div>
+                <strong>Financial Modelling (20 Hours):</strong> Valuation, 3-statement forecast structures, and cash flow sensitivity models.
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle" class="w-4 h-4 text-sky-600 shrink-0 mt-1"></i>
+              <div>
+                <strong>PowerBI Training (33+ Hours):</strong> Business dashboarding, data transformation, DAX queries, and visual reporting.
+              </div>
+            </li>
+          </ul>
         </div>
 
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ==================== 3. AREAS OF EXPERTISE ==================== -->
-    <section id="expertise" class="py-20 bg-slate-50 dark:bg-navy-950 border-b border-slate-200/60 dark:border-slate-800/60">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="text-center max-w-3xl mx-auto mb-14">
-          <div class="inline-flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 font-mono mb-2">
-            <i data-lucide="layers" class="w-4 h-4"></i>
-            <span>Domain Competencies</span>
-          </div>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-            Key Areas of Focus &amp; Financial Practice
-          </h2>
-          <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base mt-2">
-            Tailored advisory and analytical capabilities designed for corporate boards, growing enterprises, and audit committees.
-          </p>
-        </div>
-
-        <!-- 4-Card Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          
-          <!-- Card 1 -->
-          <div class="bg-white dark:bg-navy-900 p-6 rounded-2xl border border-slate-200/80 dark:border-slate-800 custom-shadow flex flex-col justify-between hover:-translate-y-1 transition duration-300">
-            <div>
-              <div class="w-12 h-12 rounded-xl bg-emerald-50 dark:bg-emerald-950/70 text-emerald-600 dark:text-emerald-400 flex items-center justify-center mb-5">
-                <i data-lucide="trending-up" class="w-6 h-6"></i>
-              </div>
-              <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Corporate Finance &amp; Valuations</h3>
-              <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-                Discounted Cash Flow (DCF), Enterprise Value analysis, precedent transaction comparisons, and buy-side/sell-side financial due diligence.
-              </p>
-            </div>
-            <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-1.5 border-t border-slate-100 dark:border-slate-800 pt-4 font-mono">
-              <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500 mr-2"></i>Intrinsic Valuation</li>
-              <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500 mr-2"></i>M&amp;A Synergies</li>
-              <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-500 mr-2"></i>WACC Determination</li>
-            </ul>
-          </div>
-
-          <!-- Card 2 -->
-          <div class="bg-white dark:bg-navy-900 p-6 rounded-2xl border border-slate-200/80 dark:border-slate-800 custom-shadow flex flex-col justify-between hover:-translate-y-1 transition duration-300">
-            <div>
-              <div class="w-12 h-12 rounded-xl bg-blue-50 dark:bg-blue-950/70 text-blue-600 dark:text-blue-400 flex items-center justify-center mb-5">
-                <i data-lucide="line-chart" class="w-6 h-6"></i>
-              </div>
-              <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Financial Modeling &amp; Analysis</h3>
-              <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-                Dynamic 3-statement integrated models, dynamic scenario planning, sensitivity testing, and KPI dashboards for executive leadership.
-              </p>
-            </div>
-            <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-1.5 border-t border-slate-100 dark:border-slate-800 pt-4 font-mono">
-              <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-500 mr-2"></i>Monte Carlo Simulations</li>
-              <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-500 mr-2"></i>Variance Analytics</li>
-              <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-blue-500 mr-2"></i>Cash Burn Projections</li>
-            </ul>
-          </div>
-
-          <!-- Card 3 -->
-          <div class="bg-white dark:bg-navy-900 p-6 rounded-2xl border border-slate-200/80 dark:border-slate-800 custom-shadow flex flex-col justify-between hover:-translate-y-1 transition duration-300">
-            <div>
-              <div class="w-12 h-12 rounded-xl bg-purple-50 dark:bg-purple-950/70 text-purple-600 dark:text-purple-400 flex items-center justify-center mb-5">
-                <i data-lucide="clipboard-check" class="w-6 h-6"></i>
-              </div>
-              <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Regulatory Audit &amp; Compliance</h3>
-              <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-                Statutory disclosures in adherence to Ind AS / IFRS guidelines, internal financial control evaluation, and tax audit compliance.
-              </p>
-            </div>
-            <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-1.5 border-t border-slate-100 dark:border-slate-800 pt-4 font-mono">
-              <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-500 mr-2"></i>CARO 2020 Compliance</li>
-              <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-500 mr-2"></i>ICoFR Review</li>
-              <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-purple-500 mr-2"></i>Direct Tax Filings</li>
-            </ul>
-          </div>
-
-          <!-- Card 4 -->
-          <div class="bg-white dark:bg-navy-900 p-6 rounded-2xl border border-slate-200/80 dark:border-slate-800 custom-shadow flex flex-col justify-between hover:-translate-y-1 transition duration-300">
-            <div>
-              <div class="w-12 h-12 rounded-xl bg-amber-50 dark:bg-amber-950/70 text-amber-600 dark:text-amber-400 flex items-center justify-center mb-5">
-                <i data-lucide="globe" class="w-6 h-6"></i>
-              </div>
-              <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Market &amp; Capital Strategy</h3>
-              <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
-                Assessing interest rate cycles, macroeconomic trends, liquidity risks, and capital structure optimization for volatile economic regimes.
-              </p>
-            </div>
-            <ul class="text-xs text-slate-500 dark:text-slate-400 space-y-1.5 border-t border-slate-100 dark:border-slate-800 pt-4 font-mono">
-              <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500 mr-2"></i>Debt vs. Equity Mix</li>
-              <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500 mr-2"></i>Working Capital Optimization</li>
-              <li class="flex items-center"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500 mr-2"></i>Monetary Policy Analysis</li>
-            </ul>
-          </div>
-
-        </div>
-
+  <!-- Leadership & Co-Curricular Section -->
+  <section id="leadership" class="py-20 border-b border-slate-200 dark:border-slate-800 bg-slate-50/50 dark:bg-slate-900/40">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-2xl mb-14">
+        <h2 class="text-xs uppercase tracking-widest text-sky-600 dark:text-sky-400 font-bold mb-2">Initiative & Communication</h2>
+        <h3 class="text-3xl font-bold text-slate-900 dark:text-white">Leadership & Accomplishments</h3>
       </div>
-    </section>
 
-    <!-- ==================== 4. FEATURED INSIGHTS & ARTICLES ==================== -->
-    <section id="insights" class="py-20 bg-white dark:bg-navy-900/40 border-b border-slate-200/60 dark:border-slate-800/60">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-3 gap-6">
         
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <!-- McKinsey Forward -->
+        <div class="p-6 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs flex flex-col justify-between">
           <div>
-            <div class="inline-flex items-center space-x-2 text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400 font-mono mb-2">
-              <i data-lucide="book-open" class="w-4 h-4"></i>
-              <span>Thought Leadership</span>
+            <div class="w-10 h-10 rounded-lg bg-sky-100 dark:bg-sky-950 text-sky-600 flex items-center justify-center mb-4">
+              <i data-lucide="compass" class="w-5 h-5"></i>
             </div>
-            <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-              Published Insights &amp; Market Notes
-            </h2>
-            <p class="text-slate-600 dark:text-slate-400 text-sm mt-1">
-              Select commentary on statutory disclosures, financial valuation nuances, and macro dynamics.
+            <h4 class="text-base font-bold text-slate-900 dark:text-white mb-2">McKinsey Forward Program</h4>
+            <span class="text-xs font-semibold text-sky-600 dark:text-sky-400 mb-3 block">April 2026 – Present</span>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+              Completed 10+ behavioral role-playing simulations for cross-functional collaboration. Applied proprietary McKinsey problem-solving frameworks and engaged with an exclusive global network.
             </p>
           </div>
-          <span class="text-xs text-slate-400 font-mono mt-4 md:mt-0">Click any card to read brief summary</span>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
-          <!-- Article 1 -->
-          <article class="cursor-pointer group bg-slate-50 dark:bg-navy-850 p-6 rounded-2xl border border-slate-200/80 dark:border-slate-800 transition duration-300 hover:border-emerald-500/70 custom-shadow flex flex-col justify-between" onclick="openInsightModal(0)">
-            <div>
-              <div class="flex items-center justify-between text-xs text-slate-400 font-mono mb-4">
-                <span>VALUATION &amp; IFRS</span>
-                <span>4 min read</span>
-              </div>
-              <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition mb-3">
-                DCF Assumptions Under Shifting Sovereign Yield Curves
-              </h3>
-              <p class="text-sm text-slate-600 dark:text-slate-300 line-clamp-3">
-                How modern practitioners must re-calibrate Terminal Growth Rates and Risk-Free Rates amidst sticky global inflation regimes and changing central bank liquidity mandates.
-              </p>
+        <!-- Debate & Public Speaking -->
+        <div class="p-6 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-sky-100 dark:bg-sky-950 text-sky-600 flex items-center justify-center mb-4">
+              <i data-lucide="mic" class="w-5 h-5"></i>
             </div>
-            <div class="pt-6 flex items-center justify-between border-t border-slate-200/60 dark:border-slate-800/80 mt-6">
-              <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 flex items-center">
-                Read Abstract <i data-lucide="chevron-right" class="w-3.5 h-3.5 ml-1"></i>
-              </span>
-              <span class="text-xs text-slate-400">Oct 2026</span>
-            </div>
-          </article>
-
-          <!-- Article 2 -->
-          <article class="cursor-pointer group bg-slate-50 dark:bg-navy-850 p-6 rounded-2xl border border-slate-200/80 dark:border-slate-800 transition duration-300 hover:border-emerald-500/70 custom-shadow flex flex-col justify-between" onclick="openInsightModal(1)">
-            <div>
-              <div class="flex items-center justify-between text-xs text-slate-400 font-mono mb-4">
-                <span>AUDIT STANDARDS</span>
-                <span>6 min read</span>
-              </div>
-              <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition mb-3">
-                CARO 2020: The Audit Trail Mandate &amp; Board Accountability
-              </h3>
-              <p class="text-sm text-slate-600 dark:text-slate-300 line-clamp-3">
-                A critical assessment of the statutory requirements surrounding accounting software edit-logs, internal controls over financial statements, and director fiduciary exposure.
-              </p>
-            </div>
-            <div class="pt-6 flex items-center justify-between border-t border-slate-200/60 dark:border-slate-800/80 mt-6">
-              <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 flex items-center">
-                Read Abstract <i data-lucide="chevron-right" class="w-3.5 h-3.5 ml-1"></i>
-              </span>
-              <span class="text-xs text-slate-400">Sep 2026</span>
-            </div>
-          </article>
-
-          <!-- Article 3 -->
-          <article class="cursor-pointer group bg-slate-50 dark:bg-navy-850 p-6 rounded-2xl border border-slate-200/80 dark:border-slate-800 transition duration-300 hover:border-emerald-500/70 custom-shadow flex flex-col justify-between" onclick="openInsightModal(2)">
-            <div>
-              <div class="flex items-center justify-between text-xs text-slate-400 font-mono mb-4">
-                <span>CAPITAL ALLOCATION</span>
-                <span>5 min read</span>
-              </div>
-              <h3 class="text-xl font-bold text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition mb-3">
-                Debt vs. Equity in Growth Ventures: Guarding ROIC
-              </h3>
-              <p class="text-sm text-slate-600 dark:text-slate-300 line-clamp-3">
-                Analyzing the cost of equity erosion vs. debt covenant restrictions during periods of balance sheet expansion in capital-intensive industries.
-              </p>
-            </div>
-            <div class="pt-6 flex items-center justify-between border-t border-slate-200/60 dark:border-slate-800/80 mt-6">
-              <span class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 flex items-center">
-                Read Abstract <i data-lucide="chevron-right" class="w-3.5 h-3.5 ml-1"></i>
-              </span>
-              <span class="text-xs text-slate-400">Aug 2026</span>
-            </div>
-          </article>
-
+            <h4 class="text-base font-bold text-slate-900 dark:text-white mb-2">Best Presenter & Debating</h4>
+            <span class="text-xs font-semibold text-sky-600 dark:text-sky-400 mb-3 block">Statewide Competitions</span>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+              Awarded <strong>Best Presenter</strong> at ICAI MCS Training (Jaipur Branch, 2025). Led inter-school teams to win over 15 debate competitions across Odisha as Debate Club President.
+            </p>
+          </div>
         </div>
 
-      </div>
-    </section>
-
-    <!-- ==================== 5. CONTACT & ENGAGEMENT ==================== -->
-    <section id="contact" class="py-20 bg-slate-50 dark:bg-navy-950">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <div class="max-w-5xl mx-auto bg-white dark:bg-navy-900 rounded-3xl border border-slate-200 dark:border-slate-800 custom-shadow overflow-hidden">
-          <div class="grid grid-cols-1 lg:grid-cols-12">
-            
-            <!-- Left Info Panel -->
-            <div class="lg:col-span-5 bg-gradient-to-br from-slate-900 via-slate-850 to-navy-900 p-8 sm:p-10 text-white flex flex-col justify-between">
-              <div>
-                <div class="inline-flex items-center space-x-2 text-xs font-mono font-semibold uppercase text-emerald-400 tracking-wider mb-4">
-                  <i data-lucide="message-square" class="w-4 h-4"></i>
-                  <span>Direct Communication</span>
-                </div>
-                <h3 class="text-2xl sm:text-3xl font-extrabold tracking-tight">Let's discuss financial strategy or compliance.</h3>
-                <p class="text-slate-300 text-sm mt-3 leading-relaxed">
-                  Open for consultative engagements, corporate finance roles, and professional collaborations.
-                </p>
-
-                <div class="mt-8 space-y-4 text-sm">
-                  <div class="flex items-center space-x-3 text-slate-200">
-                    <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-emerald-400">
-                      <i data-lucide="mail" class="w-4 h-4"></i>
-                    </div>
-                    <span>lakshya.bhardwaj@example.com</span>
-                  </div>
-
-                  <div class="flex items-center space-x-3 text-slate-200">
-                    <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-emerald-400">
-                      <i data-lucide="map-pin" class="w-4 h-4"></i>
-                    </div>
-                    <span>India &bull; Available for Remote &amp; On-Site Consults</span>
-                  </div>
-
-                  <div class="flex items-center space-x-3 text-slate-200">
-                    <div class="w-8 h-8 rounded-lg bg-white/10 flex items-center justify-center text-emerald-400">
-                      <i data-lucide="linkedin" class="w-4 h-4"></i>
-                    </div>
-                    <span>linkedin.com/in/lakshya-bhardwaj</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="pt-8 border-t border-white/10 mt-8">
-                <button onclick="downloadResumeSim()" class="w-full py-2.5 px-4 rounded-xl border border-white/20 hover:bg-white/10 text-white font-medium text-xs tracking-wider uppercase font-mono flex items-center justify-center space-x-2 transition">
-                  <i data-lucide="download" class="w-4 h-4"></i>
-                  <span>Download Curriculum Vitae</span>
-                </button>
-              </div>
+        <!-- Financial Markets & Competitions -->
+        <div class="p-6 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-xs flex flex-col justify-between">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-sky-100 dark:bg-sky-950 text-sky-600 flex items-center justify-center mb-4">
+              <i data-lucide="trending-up" class="w-5 h-5"></i>
             </div>
-
-            <!-- Right Form Panel -->
-            <div class="lg:col-span-7 p-8 sm:p-10">
-              <form id="contactForm" onsubmit="handleFormSubmit(event)" class="space-y-5">
-                
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5" for="name">Your Name</label>
-                    <input type="text" id="name" required placeholder="Alexander Vance" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-navy-850 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                  </div>
-                  <div>
-                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5" for="email">Business Email</label>
-                    <input type="email" id="email" required placeholder="alexander@firm.com" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-navy-850 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                  </div>
-                </div>
-
-                <div>
-                  <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5" for="subject">Subject / Area of Interest</label>
-                  <select id="subject" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-navy-850 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 transition">
-                    <option value="valuation">Corporate Valuation / Financial Modeling</option>
-                    <option value="audit">Statutory Audit / Ind AS Consultation</option>
-                    <option value="fulltime">Corporate Finance Career Opportunity</option>
-                    <option value="other">General Professional Query</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label class="block text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-1.5" for="message">Message</label>
-                  <textarea id="message" rows="4" required placeholder="Please outline the scope or reason for reaching out..." class="w-full px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-navy-850 text-slate-900 dark:text-white text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 transition"></textarea>
-                </div>
-
-                <!-- Live Status Message -->
-                <div id="formFeedback" class="hidden p-3 rounded-xl text-xs font-medium"></div>
-
-                <button type="submit" id="submitBtn" class="w-full py-3 rounded-xl bg-slate-900 hover:bg-emerald-700 text-white dark:bg-emerald-500 dark:hover:bg-emerald-400 dark:text-navy-950 font-bold text-sm tracking-wide transition shadow flex items-center justify-center space-x-2">
-                  <i data-lucide="send" class="w-4 h-4"></i>
-                  <span>Transmit Inquiry</span>
-                </button>
-              </form>
-            </div>
-
+            <h4 class="text-base font-bold text-slate-900 dark:text-white mb-2">Portfolio Management & Quizzing</h4>
+            <span class="text-xs font-semibold text-sky-600 dark:text-sky-400 mb-3 block">Personal Initiatives</span>
+            <p class="text-xs text-slate-600 dark:text-slate-400 leading-relaxed mb-4">
+              Actively manage personal equity portfolio (> ₹1 Lakh) delivering ~100% returns through fundamental stock picking. Runner-up at DSBM Statewide B-Quiz (out of 35 teams).
+            </p>
           </div>
         </div>
 
       </div>
-    </section>
+    </div>
+  </section>
 
-  </main>
+  <!-- Engineering & Self-Deployment Spotlight -->
+  <section class="py-16 border-b border-slate-200 dark:border-slate-800 bg-sky-900 text-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-12 gap-8 items-center">
+        <div class="md:col-span-8">
+          <span class="text-xs uppercase tracking-widest text-sky-300 font-bold mb-2 block">Technical Ownership</span>
+          <h3 class="text-2xl sm:text-3xl font-extrabold mb-3">Self-Engineered Web Architecture</h3>
+          <p class="text-sm text-sky-100 leading-relaxed max-w-2xl">
+            This entire web presence was conceptualized, configured, and deployed independently by me. From purchasing the custom domain on Namecheap, configuring 4 root DNS A-Records and CNAME forwarding, to continuous delivery via GitHub Pages with Let's Encrypt TLS/SSL enforcement—built end-to-end to demonstrate hands-on digital ownership.
+          </p>
+        </div>
+        <div class="md:col-span-4 flex flex-col gap-2.5 text-xs text-sky-200">
+          <div class="p-3 bg-white/10 rounded-lg border border-white/10 flex items-center gap-2">
+            <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+            Custom DNS & CNAME Resolution
+          </div>
+          <div class="p-3 bg-white/10 rounded-lg border border-white/10 flex items-center gap-2">
+            <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+            Automated GitHub CI/CD Pipeline
+          </div>
+          <div class="p-3 bg-white/10 rounded-lg border border-white/10 flex items-center gap-2">
+            <i data-lucide="check" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+            Strict TLS / HTTPS Enforced
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <!-- ==================== FOOTER ==================== -->
-  <footer class="bg-white dark:bg-navy-900 border-t border-slate-200 dark:border-slate-800 py-8 transition-colors">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 dark:text-slate-400 gap-4">
-      <div class="flex items-center space-x-2">
-        <span class="font-bold text-slate-700 dark:text-slate-200">Lakshya Bhardwaj</span>
-        <span>&bull;</span>
-        <span>Chartered Accountancy Finalist</span>
+  <!-- Contact & Recruiter Connect -->
+  <section id="contact" class="py-20">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-xs uppercase tracking-widest text-sky-600 dark:text-sky-400 font-bold mb-2">Get in Touch</h2>
+      <h3 class="text-3xl font-bold text-slate-900 dark:text-white mb-4">Let's Discuss Opportunities</h3>
+      <p class="text-sm text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
+        Whether you are recruiting for financial analysis, corporate reporting, statutory audit roles, or strategic consulting, I look forward to connecting.
+      </p>
+
+      <div class="flex flex-wrap items-center justify-center gap-4">
+        <a href="mailto:lakshyabhardwaj.work@gmail.com" class="inline-flex items-center gap-2 px-6 py-3 font-semibold text-sm text-white bg-sky-600 hover:bg-sky-700 rounded-lg transition-colors shadow-sm">
+          <i data-lucide="mail" class="w-4 h-4"></i>
+          lakshyabhardwaj.work@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/lakshya-bhardwaj29" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-6 py-3 font-semibold text-sm text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-lg transition-colors shadow-sm">
+          <i data-lucide="linkedin" class="w-4 h-4 text-sky-600"></i>
+          Connect on LinkedIn
+        </a>
+        <a href="tel:+919777069911" class="inline-flex items-center gap-2 px-6 py-3 font-semibold text-sm text-slate-700 dark:text-slate-200 bg-white dark:bg-slate-900 border border-slate-300 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-lg transition-colors shadow-sm">
+          <i data-lucide="phone" class="w-4 h-4 text-emerald-600"></i>
+          +91 9777069911
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 border-t border-slate-200 dark:border-slate-800 text-xs text-slate-500">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+      <div>
+        &copy; 2026 Lakshya Bhardwaj. All rights reserved.
       </div>
       <div>
-        <span>&copy; <span id="currentYear"></span> Lakshya Bhardwaj. All rights reserved.</span>
-      </div>
-      <div class="flex items-center space-x-4">
-        <a href="#hero" class="hover:text-emerald-500">Back to Top</a>
+        Domain registered on Namecheap &bull; Hosted on GitHub Pages &bull; Live at <a href="https://calakshyabhardwaj.com" class="text-sky-600 hover:underline">calakshyabhardwaj.com</a>
       </div>
     </div>
   </footer>
 
-  <!-- ==================== INSIGHT ARTICLE MODAL ==================== -->
-  <div id="insightModal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-black/60 backdrop-blur-sm p-4">
-    <div class="bg-white dark:bg-navy-900 border border-slate-200 dark:border-slate-800 rounded-3xl max-w-2xl w-full p-6 sm:p-8 custom-shadow relative max-h-[90vh] overflow-y-auto">
-      <button onclick="closeInsightModal()" class="absolute top-5 right-5 p-2 rounded-xl text-slate-400 hover:text-slate-700 dark:hover:text-white transition">
-        <i data-lucide="x" class="w-5 h-5"></i>
-      </button>
-
-      <span id="modalCategory" class="text-xs font-mono font-semibold uppercase text-emerald-600 dark:text-emerald-400">CATEGORY</span>
-      <h3 id="modalTitle" class="text-2xl font-bold text-slate-900 dark:text-white mt-1 mb-4">Modal Title</h3>
-      
-      <div id="modalBody" class="text-sm text-slate-600 dark:text-slate-300 space-y-3 leading-relaxed">
-        <!-- Injected via JavaScript -->
-      </div>
-
-      <div class="mt-6 pt-4 border-t border-slate-200 dark:border-slate-800 flex justify-end">
-        <button onclick="closeInsightModal()" class="px-5 py-2 rounded-xl bg-slate-100 dark:bg-navy-800 text-slate-800 dark:text-slate-200 text-xs font-semibold hover:bg-slate-200 dark:hover:bg-navy-700 transition">
-          Close Abstract
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- ==================== JAVASCRIPT LOGIC ==================== -->
   <script>
-    // Initialize current year in footer
-    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    // Initialize Lucide Icons
+    lucide.createIcons();
 
-    // 1. Theme Toggle Management (Persisted via localStorage)
-    const themeToggleBtn = document.getElementById('themeToggle');
-    const sunIcon = document.getElementById('sunIcon');
-    const moonIcon = document.getElementById('moonIcon');
-
-    function applyTheme(isDark) {
-      if (isDark) {
-        document.documentElement.classList.add('dark');
-        sunIcon.classList.remove('hidden');
-        moonIcon.classList.add('hidden');
-        localStorage.setItem('theme', 'dark');
-      } else {
-        document.documentElement.classList.remove('dark');
-        sunIcon.classList.add('hidden');
-        moonIcon.classList.remove('hidden');
-        localStorage.setItem('theme', 'light');
-      }
-      lucide.createIcons();
-    }
-
-    // Auto-detect preference or use stored value
-    const savedTheme = localStorage.getItem('theme');
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    applyTheme(savedTheme === 'dark' || (!savedTheme && systemPrefersDark));
-
-    themeToggleBtn.addEventListener('click', () => {
-      const isCurrentlyDark = document.documentElement.classList.contains('dark');
-      applyTheme(!isCurrentlyDark);
+    // Dark/Light Theme Switcher
+    const toggleBtn = document.getElementById('theme-toggle');
+    toggleBtn.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
     });
-
-    // 2. Mobile Menu Toggle
-    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    const menuOpenIcon = document.getElementById('menuOpenIcon');
-    const menuCloseIcon = document.getElementById('menuCloseIcon');
-
-    mobileMenuBtn.addEventListener('click', () => {
-      const isOpen = !mobileMenu.classList.contains('hidden');
-      if (isOpen) {
-        mobileMenu.classList.add('hidden');
-        menuOpenIcon.classList.remove('hidden');
-        menuCloseIcon.classList.add('hidden');
-      } else {
-        mobileMenu.classList.remove('hidden');
-        menuOpenIcon.classList.add('hidden');
-        menuCloseIcon.classList.remove('hidden');
-      }
-    });
-
-    document.querySelectorAll('.mobile-link').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-        menuOpenIcon.classList.remove('hidden');
-        menuCloseIcon.classList.add('hidden');
-      });
-    });
-
-    // 3. Articles & Insights Data and Modal Handling
-    const insightsData = [
-      {
-        title: "DCF Assumptions Under Shifting Sovereign Yield Curves",
-        category: "VALUATION & IFRS",
-        content: `
-          <p>Discounted Cash Flow (DCF) frameworks rely on capital market assumptions that have faced structural disruption due to higher-for-longer policy rates. When calculating the Weighted Average Cost of Capital (WACC), analysts frequently commit the error of decoupling the normalized risk-free rate from prevailing sovereign bond curves.</p>
-          <p>In this analysis, we examine how cross-cyclical equity risk premia (ERP) adjustments and country risk add-ons (CRPs) can prevent premature asset write-downs while maintaining conservative terminal value horizons.</p>
-          <p>Key takeaways include incorporating rolling yield curve scenarios and stress-testing capital expenditure commitments against interest coverage buffers.</p>
-        `
-      },
-      {
-        title: "CARO 2020: The Audit Trail Mandate & Board Accountability",
-        category: "AUDIT & COMPLIANCE",
-        content: `
-          <p>The Companies (Auditor's Report) Order (CARO) 2020 and accompanying MCA guidelines regarding audit trail functionality mandate tamper-proof tracking of every transactional change within business software.</p>
-          <p>Auditors must independently evaluate whether log records were altered, disabled, or selectively preserved throughout the fiscal period. Beyond a technical verification, this regulation shifts direct responsibility onto governance committees and Chief Financial Officers to demonstrate systemic accountability.</p>
-          <p>Our review maps standard audit assertions to automated query validation protocols for ERP databases.</p>
-        `
-      },
-      {
-        title: "Debt vs. Equity in Growth Ventures: Guarding ROIC",
-        category: "CAPITAL ALLOCATION",
-        content: `
-          <p>As venture capital syndicates prioritize positive unit economics over raw market penetration, capital structure design must protect Return on Invested Capital (ROIC) from the dilutive effects of equity down-rounds.</p>
-          <p>Structured mezzanine debt and asset-backed debt facilities present compelling alternatives, provided working capital conversion cycles are monitored continuously.</p>
-          <p>This discussion evaluates key debt covenants, liquidity covenants, and debt service coverage ratios (DSCR) that ensure growth-stage liquidity without jeopardizing corporate control.</p>
-        `
-      }
-    ];
-
-    function openInsightModal(index) {
-      const data = insightsData[index];
-      if (!data) return;
-      document.getElementById('modalCategory').textContent = data.category;
-      document.getElementById('modalTitle').textContent = data.title;
-      document.getElementById('modalBody').innerHTML = data.content;
-      document.getElementById('insightModal').classList.remove('hidden');
-    }
-
-    function closeInsightModal() {
-      document.getElementById('insightModal').classList.add('hidden');
-    }
-
-    // Close modal on escape key
-    window.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape') closeInsightModal();
-    });
-
-    // 4. Contact Form Handling
-    function handleFormSubmit(event) {
-      event.preventDefault();
-      const submitBtn = document.getElementById('submitBtn');
-      const formFeedback = document.getElementById('formFeedback');
-      
-      const originalText = submitBtn.innerHTML;
-      submitBtn.innerHTML = `<span>Transmitting...</span>`;
-      submitBtn.disabled = true;
-
-      // Simulate network request
-      setTimeout(() => {
-        formFeedback.className = "p-3.5 rounded-xl text-xs font-semibold bg-emerald-100 text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-800 block";
-        formFeedback.innerHTML = "Inquiry logged successfully. Lakshya Bhardwaj will review your communication shortly.";
-        
-        document.getElementById('contactForm').reset();
-        submitBtn.innerHTML = originalText;
-        submitBtn.disabled = false;
-        lucide.createIcons();
-      }, 1000);
-    }
-
-    // 5. Resume Download Simulation
-    function downloadResumeSim() {
-      const text = "Lakshya Bhardwaj - Chartered Accountancy Finalist & Finance Professional\n\nCredentials: ICAI CA Finalist, B.Com (Hons)\nFocus Areas: Corporate Finance, Valuations, Ind AS/IFRS, Statutory Audit\nContact: lakshya.bhardwaj@example.com";
-      const blob = new Blob([text], { type: 'text/plain' });
-      const anchor = document.createElement('a');
-      anchor.download = 'Lakshya_Bhardwaj_Profile.txt';
-      anchor.href = window.URL.createObjectURL(blob);
-      anchor.click();
-    }
-
-    // Render Lucide Icons
-    window.onload = function() {
-      lucide.createIcons();
-    };
   </script>
 </body>
 </html>
